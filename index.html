@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="index.css">
+	<meta charset="utf-8">
+	<title>
+		Calculator
+	</title>
+</head>
+<body>
+<div class="base">
+	<div class="img">
+		<img src="login.png" alt="Italian Trulli">
+	</div>
+	<div class="form">
+		<!-- Formula -->
+	<form oninput="store.value=(parseInt(width.value)+parseInt(length.value)+parseInt(quantity.value)+parseInt(layers.value))*10">
+		<!-- width -->
+		<label>Width</label>
+		<input type="text" name="width" class="input" id="width" required="" >
+		<!-- length -->
+		<label>Length</label>
+		<input type="text" name="length" class="right" required="" id="length"><br/>
+		<!-- layers -->
+		<label>Layers</label>
+		<input type="text" name="layers" class="input" required="" id="layers">
+		<!-- quantity -->
+		<label>Quantity</label>
+		<input type="text" name="quantity" required="" class="right" id="quantity"><br/>
+		<!-- radio -->
+		Mask<input type="radio" name="radio" id="radio1"><br>
+		Solder<input type="radio" name="radio" id="radio2"><br/>
+		<!-- result -->
+		<div id="res">Total : <output name="store"></output></div>
+	</form>
+	</div>
+	<div class="span">
+		<span id="span1">Our Location : XXXXXXXXXXX </span>
+		<span id="span2">Contact us : XXXXXXXXXXX </span>
+	</div>
+</div>
+
+<!-- deadlock -->
+<!-- <script type="text/javascript">
+	function calculator() {
+
+		var width=document.getElementsById('width').value;
+		var length=document.getElementsById('length').value;
+		var layers=document.getElementsById('layers').value;
+		var quantity=document.getElementsById('quantity').value;
+		var sum =width+layers+length+quantity;
+		document.getElementsById('result').value = sum;
+
+	}
+</script> -->
+
+		<!-- <input type="submit" id="button" name="submit" onclick="Calculator()" value="Total"> -->
+<!-- 		<button id="button" name="submit" onclick="calculator()">Total</button>
+		<br/>
+		<input type="text" id="result" /> -->
+</body>
+</html>
